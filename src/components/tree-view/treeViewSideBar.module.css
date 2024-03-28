@@ -1,0 +1,32 @@
+.container {
+  width: 200px;
+  height: 100vh;
+  background-color: aqua;
+  padding: 20px 40px;
+}
+
+.listContainer {
+  list-style-type: none;
+  gap: 16px;
+  display: flex;
+  padding: 4px 8px;
+  flex-direction: column;
+}
+
+.labelContainer > div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: larger;
+}
+
+.labelContainer > div > p{
+    color: rgb(0, 76, 255);
+}
+
+.labelContainer > div > span {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: rgb(30, 0, 255);
+  cursor: pointer;
+}

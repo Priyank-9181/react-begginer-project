@@ -1,0 +1,66 @@
+.containerR {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.createButtonContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.createButtonContainer button {
+  width: 20%;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.displayContainer {
+  width: auto;
+  height: auto;
+  min-width: 40%;
+  padding: 20px 10px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  background-color: white;
+}
+
+.displayContainer h2{
+  text-transform: capitalize;
+}
+
+.displayContainer h1{
+  text-transform: lowercase;
+}
+
+.generateButtonContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generateButtonContainer button {
+  width: 40%;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+}

@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qrContainer {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qrContainer > svg {
+  width: 100%;
+  height: auto;
+}
+
+.qrContainer > input {
+  width: auto;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+
+.qrContainer > button {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}

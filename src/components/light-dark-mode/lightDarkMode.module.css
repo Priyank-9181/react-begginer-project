@@ -1,0 +1,51 @@
+:root {
+  --bgcolor: white;
+  --textColor: white;
+  --buttonBgColor: white;
+  --buttonTextColor: black;
+  --boxBgColor: black;
+}
+
+[data-theme="dark"] {
+  --bgcolor: black;
+  --textColor: black;
+  --buttonBgColor: black;
+  --buttonTextColor: white;
+  --boxBgColor: white;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+  transition: all 1s ease;
+}
+
+.innerContainer {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--boxBgColor);
+  border: 3px solid green;
+  border-radius: 15px;
+}
+
+.innerContainer h1 {
+  color: var(--textColor);
+}
+
+.innerContainer button {
+  width: 50%;
+  height: 30px;
+  background-color: var(--buttonBgColor);
+  color: var(--buttonTextColor);
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,41 @@
+.displayContainer {
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.productsListContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.productContainer {
+  width: 250px;
+  height: auto;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.productContainer img {
+  width: 100%;
+  height: 50%;
+}
+
+.productContainer h1 {
+  font-size: 1.3rem;
+}
+
+.buttonLoad {
+  width: 20%;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
