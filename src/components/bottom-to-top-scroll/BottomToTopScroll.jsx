@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./bottomToTopScroll.module.css";
 
 function BottomToTopScroll() {
@@ -6,6 +6,7 @@ function BottomToTopScroll() {
   // const [loading, setLoading] = useState(false);
   // const [error, setError] = useState(null);
   const [scroll, setScroll] = useState(0);
+  const ref = useRef(null);
 
   // async function fetchData(url) {
   //   try {
@@ -38,7 +39,7 @@ function BottomToTopScroll() {
   // if (error !== null) return <h2>Something Went Wrong</h2>;
 
   return (
-    <div className={styles.container}>
+    <div ref={ref} className={styles.container}>
       {/* <h1>Hello World</h1>
       {data && data.length > 0
         ? data.map((value, index) => {
@@ -56,6 +57,15 @@ function BottomToTopScroll() {
           ^
         </button>
       )}
+
+      <button
+        className={styles.scrollBottomButton}
+        onClick={() => {
+          ref.current.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        v
+      </button>
     </div>
   );
 }
